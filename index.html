@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Inteligência Artificial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container" style="text-align: center">
+      <header class="jumbotron" style="background-color: #2E2EFE; color: black; font-family: arial; ">
+        <h1 style="font-size: 39px"><b>Trabalho prático Redes Neurais com Teachable Machine</b></h1>
+        <p style="font-size: 20px"><b>FILEMON BORGES DO NASCIMENTO</b></p>
+      </header>
+      <h2>Sistema que diferencia três objetos:</h2>
+      <p style="margin-bottom: 60px"><i><b>
+        CELULAR / CONTROLE DE VIDEO GAME / HEADSET
+      </b></i></p>
+      <button type="button" class="btn btn-primary" onclick="init()">
+        Iniciar Reconhecimento
+      </button>
+      <div id="webcam-container"></div>
+      <div style="margin-top: 30px; font-family: arial; font-style: bold;" class="display-4" id="label-container"></div>
+
+      <footer
+        class="panel-footer"
+        style="text-align: center; background-color:#2E2EFE ; color: black; margin-top: 100px"
+      ><b>
+        Todos direitos reservados - Departamento de Computação - IFSULDEMINAS -
+        Campus Machado
+      </b></footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <script src="tensor.js"></script>
+  </body>
+</html>
